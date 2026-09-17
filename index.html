@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Appliance Energy Consumption</title>
 
     <link rel="stylesheet" href="style.css">
@@ -10,16 +11,287 @@
 
 <body>
 
-    <h1>Appliance Energy Consumption</h1>
+    <header class="site-header">
 
-    <p id="message">
-        Welcome to our website.
-    </p>
+        <nav class="navbar">
 
-    <button id="changeButton">
-        Click Me
-    </button>
+            <a href="#" class="logo" id="logo">
+                <span class="logo-symbol">⚡</span>
+                <span class="logo-text">POWER</span>
+            </a>
+
+            <div class="nav-links">
+
+                <button class="nav-button active" data-page="home">
+                    Home
+                </button>
+
+                <button class="nav-button" data-page="televisions">
+                    Televisions
+                </button>
+
+                <button class="nav-button" data-page="about">
+                    About Us
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Home Page -->
+        <section id="home" class="page active-page">
+
+            <div class="hero">
+
+                <p class="eyebrow">SMART ENERGY • AUSTRALIA</p>
+
+                <h1>
+                    Appliance Energy
+                    <span>Consumption</span>
+                </h1>
+
+                <p class="hero-text">
+                    Discover how everyday appliances use electricity
+                    and learn about energy consumption in Australian homes.
+                </p>
+
+                <button class="primary-button" data-page="televisions">
+                    Explore Televisions
+                </button>
+
+            </div>
+
+
+            <div class="content-section">
+
+                <h2>Understanding Energy Consumption</h2>
+
+                <p>
+                    Household appliances use electricity to perform
+                    everyday tasks. Understanding their energy use can
+                    help Australian households make informed decisions
+                    about appliance use and energy efficiency.
+                </p>
+
+                <div class="info-cards">
+
+                    <div class="info-card">
+
+                        <h3>Energy Usage</h3>
+
+                        <p>
+                            Different appliances consume different
+                            amounts of electricity depending on their
+                            power rating and operating time.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <h3>Smart Choices</h3>
+
+                        <p>
+                            Choosing efficient appliances and reducing
+                            unnecessary usage can help manage household
+                            electricity consumption.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <h3>Australian Homes</h3>
+
+                        <p>
+                            Energy consumption varies between households
+                            depending on appliance types, usage habits,
+                            and home size.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Televisions Page -->
+        <section id="televisions" class="page">
+
+            <div class="page-banner">
+
+                <p class="eyebrow">TELEVISION ENERGY</p>
+
+                <h1>Televisions</h1>
+
+                <p>
+                    Learn how televisions contribute to household
+                    energy consumption.
+                </p>
+
+            </div>
+
+
+            <div class="content-section">
+
+                <h2>Television Energy Consumption</h2>
+
+                <p>
+                    Television energy consumption depends on factors
+                    such as screen size, display technology, brightness,
+                    and hours of use.
+                </p>
+
+
+                <div class="info-cards">
+
+                    <div class="info-card">
+
+                        <h3>Screen Size</h3>
+
+                        <p>
+                            Larger televisions may use more electricity,
+                            depending on their design and efficiency.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <h3>Display Technology</h3>
+
+                        <p>
+                            Different display technologies have different
+                            energy consumption characteristics.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <h3>Viewing Habits</h3>
+
+                        <p>
+                            The number of hours a television is used
+                            affects its total energy consumption.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="energy-example">
+
+                    <h2>Example: Television Energy Use</h2>
+
+                    <p>
+                        A television rated at 100 watts used for
+                        5 hours per day consumes approximately
+                        0.5 kilowatt-hours per day.
+                    </p>
+
+                    <div class="energy-number">
+                        0.5 kWh
+                    </div>
+
+                    <p class="small-text">
+                        This is an illustrative calculation, not a
+                        measured energy consumption value.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Us Page -->
+        <section id="about" class="page">
+
+            <div class="page-banner">
+
+                <p class="eyebrow">ABOUT THIS PROJECT</p>
+
+                <h1>About Us</h1>
+
+                <p>
+                    Learn about the purpose of this website.
+                </p>
+
+            </div>
+
+
+            <div class="content-section">
+
+                <h2>Our Project</h2>
+
+                <p>
+                    This website was created for COS30045 Data Visualisation.
+                    It demonstrates the use of HTML, CSS, and JavaScript
+                    to create an interactive website about appliance
+                    energy consumption.
+                </p>
+
+
+                <h2>Project Purpose</h2>
+
+                <p>
+                    The purpose of this project is to explore how
+                    web technologies can be used to present information
+                    about household energy consumption.
+                </p>
+
+
+                <h2>Technologies Used</h2>
+
+                <div class="technology-list">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>GitHub</span>
+                    <span>Vercel</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <p>
+            © <span id="year"></span>
+            Your Name
+        </p>
+
+        <p>
+            GenAI acknowledgement:
+            ChatGPT and GitHub Copilot were used to assist
+            with code development and learning.
+        </p>
+
+    </footer>
+
 
     <script src="script.js"></script>
+
 </body>
 </html>

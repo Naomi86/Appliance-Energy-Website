@@ -1,14 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 40px;
+    background-color: #f4f7f8;
+    color: #17212b;
+    line-height: 1.6;
 }
 
-h1 {
-    font-size: 36px;
+
+.site-header {
+    background-color: #17212b;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-button {
-    padding: 10px 20px;
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+.logo-symbol {
+    color: #f5c542;
+    font-size: 28px;
+}
+
+
+.logo-text {
+    letter-spacing: 2px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+
+.nav-button {
+    background: transparent;
+    border: none;
+
+    color: white;
+    padding: 10px 16px;
+
+    font-size: 15px;
     cursor: pointer;
+
+    border-radius: 6px;
+
+    transition: background-color 0.3s;
+}
+
+
+.nav-button:hover {
+    background-color: #304453;
+}
+
+
+.nav-button.active {
+    background-color: #f5c542;
+    color: #17212b;
+}
+
+
+.page {
+    display: none;
+}
+
+
+.page.active-page {
+    display: block;
+}
+
+
+.hero {
+    background-color: #17212b;
+    color: white;
+
+    padding: 100px 30px;
+    text-align: center;
+}
+
+
+.eyebrow {
+    color: #f5c542;
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+
+.hero h1 span {
+    color: #f5c542;
+}
+
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+
+
+.primary-button {
+    background-color: #f5c542;
+    color: #17212b;
+
+    border: none;
+    padding: 14px 24px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    border-radius: 6px;
+    cursor: pointer;
+
+    transition: transform 0.3s;
+}
+
+
+.primary-button:hover {
+    transform: translateY(-3px);
+}
+
+
+.content-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 30px;
+}
+
+
+.content-section h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+
+.content-section > p {
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    margin-top: 35px;
+}
+
+
+.info-card {
+    background-color: white;
+
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.info-card h3 {
+    color: #17212b;
+    margin-bottom: 12px;
+}
+
+
+.page-banner {
+    background-color: #304453;
+    color: white;
+
+    padding: 70px 30px;
+    text-align: center;
+}
+
+
+.page-banner h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+
+.energy-example {
+    margin-top: 50px;
+
+    background-color: white;
+    padding: 35px;
+
+    border-left: 5px solid #f5c542;
+    border-radius: 8px;
+}
+
+
+.energy-number {
+    font-size: 42px;
+    font-weight: bold;
+    color: #17212b;
+
+    margin: 20px 0;
+}
+
+
+.small-text {
+    font-size: 13px;
+    color: #666;
+}
+
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+
+.technology-list span {
+    background-color: #17212b;
+    color: white;
+
+    padding: 10px 18px;
+    border-radius: 20px;
+}
+
+
+.site-footer {
+    background-color: #17212b;
+    color: white;
+
+    text-align: center;
+    padding: 30px;
+
+    font-size: 14px;
+}
+
+
+.site-footer p {
+    margin: 8px 0;
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+
 }
